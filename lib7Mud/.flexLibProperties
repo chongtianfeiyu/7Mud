@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="com.n7mud.MainSprite"/>
+    <classEntry path="com.n7mud.actSpr.ActSprBodyView"/>
+    <classEntry path="com.n7mud.actSpr.ActSprOtherView"/>
+    <classEntry path="com.n7mud.actSpr.ActSprPlayerView"/>
+    <classEntry path="com.n7mud.actSpr.ActSprSkillIconView"/>
+    <classEntry path="com.n7mud.actSpr.ActSprView"/>
+    <classEntry path="com.n7mud.actSpr.ActSprWeaponView"/>
+    <classEntry path="com.n7mud.actSpr.structs.CACT"/>
+    <classEntry path="com.n7mud.actSpr.structs.CSPR"/>
+    <classEntry path="com.n7mud.actSpr.structs.acth.ActAll"/>
+    <classEntry path="com.n7mud.actSpr.structs.acth.ActHeader"/>
+    <classEntry path="com.n7mud.actSpr.structs.acth.AnyActAnyPat"/>
+    <classEntry path="com.n7mud.actSpr.structs.acth.AnyAction"/>
+    <classEntry path="com.n7mud.actSpr.structs.acth.AnyPatSprV0101"/>
+    <classEntry path="com.n7mud.actSpr.structs.acth.AnyPatSprV0201"/>
+    <classEntry path="com.n7mud.actSpr.structs.acth.AnyPatSprV0204"/>
+    <classEntry path="com.n7mud.actSpr.structs.acth.AnyPatSprV0205"/>
+    <classEntry path="com.n7mud.actSpr.structs.acth.IAnyPatSprV0205"/>
+    <classEntry path="com.n7mud.actSpr.structs.acth.PatHeader"/>
+    <classEntry path="com.n7mud.actSpr.structs.sprh.AnySprite"/>
+    <classEntry path="com.n7mud.actSpr.structs.sprh.BITMAPFILEHEADER"/>
+    <classEntry path="com.n7mud.actSpr.structs.sprh.BITMAPINFOHEADER"/>
+    <classEntry path="com.n7mud.actTpc.ActTpcBodyView"/>
+    <classEntry path="com.n7mud.actTpc.ActTpcOtherView"/>
+    <classEntry path="com.n7mud.actTpc.ActTpcPlayerView"/>
+    <classEntry path="com.n7mud.actTpc.ActTpcView"/>
+    <classEntry path="com.n7mud.actTpc.ActTpcWeaponView"/>
+    <classEntry path="com.n7mud.display.IAnimation"/>
+    <classEntry path="com.n7mud.display.IMultiStateAnimation"/>
+    <classEntry path="com.n7mud.display.bitmap.BitmapAnimation"/>
+    <classEntry path="com.n7mud.display.bitmap.BitmapDataAtlas"/>
+    <classEntry path="com.n7mud.display.bitmap.MultiBitmapAnimation"/>
+    <classEntry path="com.n7mud.display.bitmap.MultiStateBitmapAnimaiton"/>
+    <classEntry path="com.n7mud.display.texture.MultiStateTextureAnimaiton"/>
+    <classEntry path="com.n7mud.display.texture.MultiTextureAnimation"/>
+    <classEntry path="com.n7mud.display.texture.TextureAnimation"/>
+    <classEntry path="com.n7mud.events.ActSprEvent"/>
+    <classEntry path="com.n7mud.events.ActTpcEvent"/>
+    <classEntry path="com.n7mud.events.GameEvent"/>
+    <classEntry path="com.n7mud.events.UserInfoEvent"/>
+    <classEntry path="com.n7mud.info.BattleCharacterInfo"/>
+    <classEntry path="com.n7mud.info.UserInfo"/>
+    <classEntry path="com.n7mud.interfaces.IDisplayMgr"/>
+    <classEntry path="com.n7mud.interfaces.IKeyMgr"/>
+    <classEntry path="com.n7mud.interfaces.ISprMgr"/>
+    <classEntry path="com.n7mud.interfaces.ITextureMgr"/>
+    <classEntry path="com.n7mud.interfaces.ITickable"/>
+    <classEntry path="com.n7mud.interfaces.IUIMgr"/>
+    <classEntry path="com.n7mud.interfaces.IUserInfo"/>
+    <classEntry path="com.n7mud.interfaces.IViewFactory"/>
+    <classEntry path="com.n7mud.interfaces.IZipMgr"/>
+    <classEntry path="com.n7mud.network.DataBlock"/>
+    <classEntry path="com.n7mud.network.DurianHttp"/>
+    <classEntry path="com.n7mud.network.MyByteArray"/>
+    <classEntry path="com.n7mud.network.StringUtils"/>
+    <classEntry path="com.n7mud.robotlegs.DurianBundle"/>
+    <classEntry path="com.n7mud.robotlegs.DurianConfig"/>
+    <classEntry path="com.n7mud.robotlegs.extensions.displayMgrExtension.DisplayMgr"/>
+    <classEntry path="com.n7mud.robotlegs.extensions.displayMgrExtension.DisplayMgrExtension"/>
+    <classEntry path="com.n7mud.robotlegs.extensions.keyMgrExtension.KeyMgr"/>
+    <classEntry path="com.n7mud.robotlegs.extensions.keyMgrExtension.KeyMgrExtension"/>
+    <classEntry path="com.n7mud.robotlegs.extensions.textureMgrExtension.TextureMgr"/>
+    <classEntry path="com.n7mud.robotlegs.extensions.textureMgrExtension.TextureMgrExtension"/>
+    <classEntry path="com.n7mud.robotlegs.extensions.uiMgrExtension.UIMgr"/>
+    <classEntry path="com.n7mud.robotlegs.extensions.uiMgrExtension.UIMgrExtension"/>
+    <classEntry path="com.n7mud.robotlegs.extensions.zipMgrExtension.ZipMgr"/>
+    <classEntry path="com.n7mud.robotlegs.extensions.zipMgrExtension.ZipMgrExtension"/>
+    <classEntry path="com.n7mud.starling.StarlingMain"/>
+    <classEntry path="com.n7mud.utils.Counter"/>
+    <classEntry path="com.n7mud.utils.QTree"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>
