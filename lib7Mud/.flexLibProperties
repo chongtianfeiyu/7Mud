@@ -56,21 +56,15 @@
     <classEntry path="com.n7mud.network.DurianHttp"/>
     <classEntry path="com.n7mud.network.MyByteArray"/>
     <classEntry path="com.n7mud.network.StringUtils"/>
-    <classEntry path="com.n7mud.robotlegs.DurianBundle"/>
-    <classEntry path="com.n7mud.robotlegs.DurianConfig"/>
-    <classEntry path="com.n7mud.robotlegs.extensions.displayMgrExtension.DisplayMgr"/>
-    <classEntry path="com.n7mud.robotlegs.extensions.displayMgrExtension.DisplayMgrExtension"/>
-    <classEntry path="com.n7mud.robotlegs.extensions.keyMgrExtension.KeyMgr"/>
-    <classEntry path="com.n7mud.robotlegs.extensions.keyMgrExtension.KeyMgrExtension"/>
-    <classEntry path="com.n7mud.robotlegs.extensions.textureMgrExtension.TextureMgr"/>
-    <classEntry path="com.n7mud.robotlegs.extensions.textureMgrExtension.TextureMgrExtension"/>
-    <classEntry path="com.n7mud.robotlegs.extensions.uiMgrExtension.UIMgr"/>
-    <classEntry path="com.n7mud.robotlegs.extensions.uiMgrExtension.UIMgrExtension"/>
-    <classEntry path="com.n7mud.robotlegs.extensions.zipMgrExtension.ZipMgr"/>
-    <classEntry path="com.n7mud.robotlegs.extensions.zipMgrExtension.ZipMgrExtension"/>
+    <classEntry path="com.n7mud.managers.DisplayMgr"/>
+    <classEntry path="com.n7mud.managers.KeyMgr"/>
+    <classEntry path="com.n7mud.managers.TextureMgr"/>
+    <classEntry path="com.n7mud.managers.UIMgr"/>
+    <classEntry path="com.n7mud.managers.ZipMgr"/>
     <classEntry path="com.n7mud.starling.StarlingMain"/>
     <classEntry path="com.n7mud.utils.Counter"/>
     <classEntry path="com.n7mud.utils.QTree"/>
+    <classEntry path="com.n7mud.managers.MainMgr"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

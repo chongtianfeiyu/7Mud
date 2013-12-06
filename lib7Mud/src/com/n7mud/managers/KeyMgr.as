@@ -1,4 +1,4 @@
-package com.n7mud.robotlegs.extensions.keyMgrExtension
+package com.n7mud.managers
 {
     import com.n7mud.interfaces.IKeyMgr;
     

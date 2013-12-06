@@ -8,6 +8,7 @@ package views
     import flash.events.MouseEvent;
     
     import game.ui.defaultViewUI;
+    import consts.UIConsts;
     
     public class DefaultView extends defaultViewUI
     {

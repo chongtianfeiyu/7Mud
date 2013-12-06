@@ -1,4 +1,4 @@
-package com.n7mud.robotlegs.extensions.uiMgrExtension
+package com.n7mud.managers
 {
     import com.n7mud.interfaces.IUIMgr;
     import com.n7mud.interfaces.IViewFactory;

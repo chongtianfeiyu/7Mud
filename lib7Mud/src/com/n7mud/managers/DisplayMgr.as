@@ -1,4 +1,4 @@
-package com.n7mud.robotlegs.extensions.displayMgrExtension
+package com.n7mud.managers
 {
     import com.n7mud.interfaces.IDisplayMgr;
     import com.n7mud.starling.StarlingMain;

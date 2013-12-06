@@ -1,4 +1,4 @@
-package
+package consts
 {
     public class UIConsts
     {

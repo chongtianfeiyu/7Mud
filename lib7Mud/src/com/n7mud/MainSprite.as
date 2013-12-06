@@ -1,10 +1,7 @@
 package com.n7mud
 {
-    import com.n7mud.interfaces.IDisplayMgr;
-    import com.n7mud.interfaces.ITextureMgr;
-    import com.n7mud.interfaces.IUIMgr;
     import com.n7mud.interfaces.IUserInfo;
-    import com.n7mud.interfaces.IZipMgr;
+    import com.n7mud.managers.MainMgr;
     import com.n7mud.starling.StarlingMain;
     
     import flash.display.Sprite;
@@ -29,18 +26,6 @@ package com.n7mud
     {
         [Inject]
         public var logger:ILogger;
-        
-        [Inject]
-        public var displayMgr:IDisplayMgr;
-        
-        [Inject]
-        public var uiMgr:IUIMgr;
-        
-        [Inject]
-        public var zipMgr:IZipMgr; 
-        
-        [Inject]
-        public var textureMgr:ITextureMgr;
         
         [Inject]
         public var eventDispatcher:IEventDispatcher;
@@ -110,9 +95,6 @@ package com.n7mud
             initAway3D();
             initStarling();
             initMornUI();
-            //            initMaterials();
-            //            initObjects();
-            //            initButton();
             initListeners();
         }
         
@@ -171,7 +153,7 @@ package com.n7mud
             //inject root sprite
             _context.injector.injectInto(this);
             logger.debug( "onContextInitialized" );
-            displayMgr.initStarlingLevels( _starlingMain );
+            MainMgr.displayMgr.initStarlingLevels( _starlingMain );
         }
         
         /**

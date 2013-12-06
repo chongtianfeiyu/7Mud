@@ -6,7 +6,7 @@ package
     import com.n7mud.actTpc.ActTpcView;
     import com.n7mud.events.GameEvent;
     import com.n7mud.interfaces.ITickable;
-    import com.n7mud.robotlegs.DurianBundle;
+    import com.n7mud.managers.MainMgr;
     
     import flash.display.BitmapData;
     import flash.events.Event;
@@ -39,6 +39,7 @@ package
     import starling.display.BlendMode;
     import starling.display.DisplayObject;
     import starling.textures.TextureAtlas;
+    import consts.UIConsts;
     
     [SWF(width="960",height="640",frameRate="60",backgroundColor="#ffffff")]
     public class Main extends MainSprite
@@ -62,9 +63,10 @@ package
         
         override protected function onStarlingInitialized():void
         {
+            MainMgr.instance;
+            
             _context = new Context()
                 .install( MVCSBundle )
-                .install( DurianBundle )
                 .configure( MainConfig )
                 .configure( new ContextView( this ) );
             _context.initialize( onContextInitialized );
@@ -115,7 +117,7 @@ package
             return;
             
             eventDispatcher.addEventListener( GameEvent.LOGIN , onLogin );
-            uiMgr.show( ConfigData.DEFUALT_VIEW );
+            MainMgr.uiMgr.show( ConfigData.DEFUALT_VIEW );
         }
         
         /**
@@ -125,7 +127,7 @@ package
         private function onLogin( e:GameEvent ):void
         {
             eventDispatcher.addEventListener( GameEvent.CHOOSE , onChoose );
-            uiMgr.show( UIConsts.CHOOSE_VIEW );
+            MainMgr.uiMgr.show( UIConsts.CHOOSE_VIEW );
         }
         
         /**
@@ -135,22 +137,22 @@ package
         private function onChoose( e:GameEvent ):void
         {
             eventDispatcher.addEventListener( GameEvent.MENU , onMenu );
-            uiMgr.show( UIConsts.GAME_VIEW );
+            MainMgr.uiMgr.show( UIConsts.GAME_VIEW );
         }
         
         private function onMenu( e:GameEvent ):void
         {
             eventDispatcher.addEventListener( GameEvent.CONTINUE , onContinue );
-            uiMgr.show( UIConsts.MENU_VIEW );
+            MainMgr.uiMgr.show( UIConsts.MENU_VIEW );
         }
         
         private function onContinue( e:GameEvent ):void
         {
-            uiMgr.hide( UIConsts.MENU_VIEW );
+            MainMgr.uiMgr.hide( UIConsts.MENU_VIEW );
             
             var data:ByteArray = App.loader.getResLoaded( ResTable.MONSTER_TEXTURE_001 );
             var atlasXml:XML = XML( App.loader.getResLoaded( ResTable.MONSTER_ATLASXML_001 ) );
-            textureMgr.getTextureAtlas( ResTable.MONSTER_TEXTURE_001 , data , atlasXml , onActTpcReady );
+            MainMgr.textureMgr.getTextureAtlas( ResTable.MONSTER_TEXTURE_001 , data , atlasXml , onActTpcReady );
         }
         
         
@@ -159,9 +161,9 @@ package
             _viewList = new Vector.<DisplayObject>();
             
             var actBytes:ByteArray = App.loader.getResLoaded( ResTable.ACT_ZIP );
-            zipMgr.addZip( ResTable.ACT_ZIP , actBytes );
+            MainMgr.zipMgr.addZip( ResTable.ACT_ZIP , actBytes );
             
-            var cact:CACT = new CACT( zipMgr.getFileFromZip( ResTable.ACT_ZIP , ResTable.MONSTER_PORING_ACT ));
+            var cact:CACT = new CACT( MainMgr.zipMgr.getFileFromZip( ResTable.ACT_ZIP , ResTable.MONSTER_PORING_ACT ));
             
             var count:int = 0;
             while( count < 200 )

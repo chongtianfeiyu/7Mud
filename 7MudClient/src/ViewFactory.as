@@ -11,6 +11,7 @@ package
     import views.DefaultView;
     import views.GameView;
     import views.MenuDialog;
+    import consts.UIConsts;
     
     public class ViewFactory implements IViewFactory
     {
