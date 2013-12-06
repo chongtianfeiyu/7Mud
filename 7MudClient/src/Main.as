@@ -109,6 +109,11 @@ package
          */        
         protected function onPerloadComplete():void
         {
+//            new TestPhase001( stage );
+//            new TestPhase002( stage );
+            
+            return;
+            
             eventDispatcher.addEventListener( GameEvent.LOGIN , onLogin );
             uiMgr.show( ConfigData.DEFUALT_VIEW );
         }

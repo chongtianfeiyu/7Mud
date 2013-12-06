@@ -109,6 +109,7 @@ package com.n7mud
         {
             initAway3D();
             initStarling();
+            initMornUI();
             //            initMaterials();
             //            initObjects();
             //            initButton();
@@ -128,8 +129,6 @@ package com.n7mud
         
         protected function initStarling():void
         {
-            App.init( this );
-            
             Starling.handleLostContext = true;
             Starling.multitouchEnabled = true;
             _starling = new Starling( StarlingMain, stage , _stage3DProxy.viewPort , _stage3DProxy.stage3D);
@@ -137,6 +136,11 @@ package com.n7mud
             _starling.showStats = true;
             _starling.showStatsAt(HAlign.RIGHT, VAlign.CENTER);
             //            _starling.start();
+        }
+        
+        protected function initMornUI():void
+        {
+            App.init( this );
         }
         
         protected function initListeners():void

@@ -1,0 +1,20 @@
+<langs>
+  <!-- chooseView -->
+  <!-- defaultView -->
+  <item key="login" value="login"/>
+  <item key="register" value="register"/>
+  <item key="username" value="username"/>
+  <item key="password" value="password"/>
+  <item key="email" value="email"/>
+  <item key="confirm password" value="confirm password"/>
+  <!-- gameView -->
+  <item key="999999" value="999999"/>
+  <!-- loseDialog -->
+  <!-- menuDialog -->
+  <!-- testView -->
+  <item key="label" value="label"/>
+  <item key="label1,label2" value="label1,label2"/>
+  <item key="TextArea" value="TextArea"/>
+  <item key="TextInput" value="TextInput"/>
+  <!-- winDialog -->
+</langs>
