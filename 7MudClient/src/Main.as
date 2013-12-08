@@ -9,7 +9,6 @@ package
     import com.n7mud.managers.MainMgr;
     
     import flash.display.BitmapData;
-    import flash.events.Event;
     import flash.geom.Vector3D;
     import flash.text.TextField;
     import flash.utils.ByteArray;
@@ -28,6 +27,8 @@ package
     import away3d.tools.helpers.ParticleGeometryHelper;
     import away3d.utils.Cast;
     
+    import consts.UIConsts;
+    
     import morn.core.handlers.Handler;
     import morn.core.managers.ResLoader;
     
@@ -39,11 +40,14 @@ package
     import starling.display.BlendMode;
     import starling.display.DisplayObject;
     import starling.textures.TextureAtlas;
-    import consts.UIConsts;
+    
+    import views.logics.MainViewLogic;
     
     [SWF(width="960",height="640",frameRate="60",backgroundColor="#ffffff")]
     public class Main extends MainSprite
     {
+        protected var _mainViewLogic:MainViewLogic;
+        
         protected var _viewList:Vector.<DisplayObject>;
         
         protected var _particleAnimationSet:ParticleAnimationSet;
@@ -76,18 +80,10 @@ package
         {
             super.onContextInitialized();
             
-            stage.addEventListener( Event.ACTIVATE, handleActivate, false, 0, true );
-            stage.addEventListener( Event.DEACTIVATE, handleActivate, false, 0, true );
-            
             var assetList:Array = [];
             assetList.push( {url: ResTable.CONFIG, type:ResLoader.TXT} );
             assetList.push( {url: ResTable.PERLOAD, type:ResLoader.TXT} );
             App.loader.loadAssets( assetList , new Handler( onLoadComplete ) );
-        }
-        
-        protected function handleActivate( e:Event):void
-        {
-            _context.dispatchEvent( e );
         }
         
         /**

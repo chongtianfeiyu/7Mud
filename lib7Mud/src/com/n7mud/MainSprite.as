@@ -154,6 +154,14 @@ package com.n7mud
             _context.injector.injectInto(this);
             logger.debug( "onContextInitialized" );
             MainMgr.displayMgr.initStarlingLevels( _starlingMain );
+            
+            stage.addEventListener( Event.ACTIVATE, handleActivate, false, 0, true );
+            stage.addEventListener( Event.DEACTIVATE, handleActivate, false, 0, true );
+        }
+        
+        protected function handleActivate( e:Event):void
+        {
+            _context.dispatchEvent( e );
         }
         
         /**
